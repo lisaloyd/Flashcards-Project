@@ -1,30 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Main from './Components/Main/Main.jsx';
+
 
 function App() {
 
   const [flashcards, setFlashcards] = useState([]);
-  const [collections, setCollections] = useState([]);
-
+  
 
   useEffect (() => {
-    getAllCollections();
-    getCardsForCollections();
+    getCardsForCollection();
   }, [])
 
-  async function getAllCollections(){
-      let response = await axios.get('http://127.0.0.1:8000/api/collections/');
-      setCollections(response.data);
-  } 
-
-  async function getCardsForCollections(){
+  
+  async function getCardsForCollection(){
     let response = await axios.get('http://127.0.0.1:8000/api/collections/2/cards/');
     setFlashcards(response.data);
   }
   
+  
   return (
     <div>
-      
+      <Main />
     </div>
   );
 }
