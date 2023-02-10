@@ -7,8 +7,8 @@ const CardViewer = (props) => {
     return(
         <div>
             <h3>{props.flashcards.collection}</h3>
-        <button type='text' className={previousButton} onClick={() => togglepreviousButton('previous')}>Previous</button>
-            <button type='text' className={nextButton} onClick={() => togglenextButton('next')}>Next</button>
+            <button type='text' className={previousButton} onClick={() =>('previous')}>Previous</button>
+            <button type='text' className={nextButton} onClick={() => ('next')}>Next</button>
         </div>
     )
 }

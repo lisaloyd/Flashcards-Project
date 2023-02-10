@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import CardViewer from './Components/CardViewer/CardViewer';
+import CollectionList from './Components/CollectionList/CollectionList';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
   return (
     <div>
       <CardViewer />
+      <CollectionList collections={collections}/>
     </div>
   );
 }
