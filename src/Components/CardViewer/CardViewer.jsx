@@ -1,3 +1,4 @@
+// Trying to get to 'next' and 'previous' buttons on card
 import React, { useState, } from 'react';
 
 const CardViewer = (props) => {

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-const Collection = (props) => {
-
-}
+const Collection = ({ collection }) => {
+  return <div>{collection.title}</div>;
+};
 
 export default Collection;

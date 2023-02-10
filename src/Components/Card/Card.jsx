@@ -1,3 +1,5 @@
+// Trying to switch between the word and definition on a card
+
 import React, { useState } from 'react';
 
 

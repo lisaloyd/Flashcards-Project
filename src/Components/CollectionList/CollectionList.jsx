@@ -1,5 +1,6 @@
-import Reach, { useState } from 'react';
-import Collection from '/Components/Collection/Collection/'
+import React, { useState } from 'react';
+import Collection from '../Collection/Collection';
+
 
 const CollectionList = (props) => {
     let collections = props.collections.map(collection => {
