@@ -17,6 +17,7 @@ function App() {
     let response = await axios.get(
       `http://127.0.0.1:8000/api/collections/${collectionId}/cards/`
     );
+
     setFlashcards(response.data);
   }
 
@@ -27,7 +28,8 @@ function App() {
 
   return (
     <div>
-      {/* <CardViewer /> */}
+      <CardViewer cards ={flashcards}/>
+  
       <CollectionList collections={collections} />
     </div>
   );
